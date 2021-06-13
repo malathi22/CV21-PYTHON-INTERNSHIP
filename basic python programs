@@ -1,0 +1,23 @@
+ADDITION OF TWO NUMBERS:
+
+num1 = 1.5
+num2 = 6.3
+sum = num1 + num2
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+
+TO FIND SQUARE ROOT:
+
+num = 8 
+num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+
+
+TO FIND AREA OF TRIANGLE:
+
+a = 5
+b = 6
+c = 7
+s = (a + b + c) / 2
+area = (s*(s-a)(s-b)(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
