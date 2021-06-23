@@ -1,0 +1,43 @@
+Create a real time scenario for inheritance example Banking concept¶
+In [6]:
+class Bank_Account:
+    def __init__(self):
+        self.balance=0
+        print("Hello!!! Welcome to the Deposit & Withdrawal Machine")
+    def display(self):
+        print("\n Net Available Balance=",self.balance)
+In [7]:
+class Deposit(Bank_Account):  #inheritance
+    def deposit(self):
+        amount=float(input("Enter amount to be Deposited: "))
+        self.balance += amount
+        print("\n Amount Deposited:",amount)
+In [12]:
+class Withdraw(Bank_Account):  #mutiple inheritance
+    def withdraw(self):
+        amount = float(input("Enter amount to be Withdrawn: "))
+        if self.balance>=amount:
+            self.balance-=amount
+            print("\n You Withdrew:", amount)
+        else:
+            print("\n Insufficient balance  ")
+In [16]:
+s = Bank_Account()
+Hello!!! Welcome to the Deposit & Withdrawal Machine
+In [17]:
+p=Deposit()
+p.deposit()
+Hello!!! Welcome to the Deposit & Withdrawal Machine
+Enter amount to be Deposited: 0
+
+ Amount Deposited: 0.0
+In [18]:
+q=Withdraw()
+q.withdraw()
+s.display()
+Hello!!! Welcome to the Deposit & Withdrawal Machine
+Enter amount to be Withdrawn: 700
+
+ Insufficient balance  
+
+ Net Available Balance= 0
