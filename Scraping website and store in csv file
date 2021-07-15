@@ -1,0 +1,18 @@
+Scraping website and store in csv file
+
+In [1]:
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+In [3]:
+import csv
+In [4]:
+r = requests.get('https://authoraditiagarwal.com/')
+In [6]:
+soup = BeautifulSoup(r.text, 'lxml')
+In [7]:
+f = csv.writer(open(' dataprocessing.csv ','w'))
+f.writerow(['Title'])
+f.writerow([soup.title.text])
+Out[7]:
+25
