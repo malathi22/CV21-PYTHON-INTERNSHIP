@@ -1,0 +1,17 @@
+Python Enumerate
+
+• Enumerate a python list and try to print the counter with the list value
+
+In [1]:
+list1= ['Ram','Surya','Akash','Dev','Charles']
+print(list(enumerate(list1)))
+[(0, 'Ram'), (1, 'Surya'), (2, 'Akash'), (3, 'Dev'), (4, 'Charles')]
+In [2]:
+print(enumerate(list1))
+<enumerate object at 0x7fe128f0faf0>
+• Enumerate a python tuple and try to print the counter with the tuple value
+
+In [3]:
+tuple1=('Ram','Surya','Akash','Dev','Charles')
+print(tuple(enumerate(tuple1)))
+((0, 'Ram'), (1, 'Surya'), (2, 'Akash'), (3, 'Dev'), (4, 'Charles'))
